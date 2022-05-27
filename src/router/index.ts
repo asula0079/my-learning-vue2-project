@@ -76,12 +76,18 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!store.state.user) {
       next({
-        name: 'login'
+        name: 'login',
+        query: {
+          // 记录当前的页面地址，用于返回此页面用
+          redirect: to.fullPath
+        }
       })
+    } else {
+      next()
     }
+  } else {
     next()
   }
-  next()
 })
 
 export default router

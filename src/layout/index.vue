@@ -31,7 +31,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .el-header, .el-footer {
-  background-color: #c181f9;
+  background-color: #034b5c;
   line-height: 60px;
 }
 

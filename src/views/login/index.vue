@@ -71,6 +71,7 @@ export default Vue.extend({
         const { data } = await login(this.form)
 
         if (data.state !== 1) {
+          console.log(data)
           this.$message.error(data.message)
           this.loading = false
           return
@@ -78,13 +79,13 @@ export default Vue.extend({
         // 保存登录状态
         this.$store.commit('setUser', data.content)
         // 跳转路由
-        await this.$router.push({
-          name: 'home'
-        })
+        await this.$router.push(this.$route.query.redirect as string || '/')
         // 提示消息
         this.$message.success('登录成功')
+        this.loading = false
       } catch (err) {
-        this.$message.info('登录失败')
+        this.$message.info('输入信息不正确')
+        this.loading = false
       }
     }
   }
