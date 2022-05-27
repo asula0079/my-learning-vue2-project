@@ -2,12 +2,12 @@
   <div class="advert">管理</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'courseIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

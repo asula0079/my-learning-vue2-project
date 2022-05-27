@@ -1,13 +1,13 @@
 <template>
-  <div class="advert">首页</div>
+  <h1>首页</h1>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'homeIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

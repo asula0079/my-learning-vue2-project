@@ -2,12 +2,12 @@
   <div class="role">角色管理</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'roleIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

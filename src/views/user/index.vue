@@ -2,12 +2,12 @@
   <div class="user">用户管理</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'userIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

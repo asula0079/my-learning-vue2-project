@@ -2,12 +2,12 @@
   <div class="advert">广告位管理</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'AdvertSpaceIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

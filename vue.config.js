@@ -18,7 +18,7 @@ module.exports = defineConfig({
         target: 'http://eduboss.lagounews.com',
         changeOrigin: true
       },
-      '/front2': {
+      '/front': {
         target: 'http://edufront.lagounews.com',
         changeOrigin: true
       }

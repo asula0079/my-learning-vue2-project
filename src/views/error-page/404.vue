@@ -2,12 +2,12 @@
   <div class="404">404 Not found</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: '404View'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

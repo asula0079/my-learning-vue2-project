@@ -2,12 +2,12 @@
   <div class="menu">菜单管理</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'menuIndex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view/>
-    <h1 class="text">asdfasdf</h1>
   </div>
 </template>
 
