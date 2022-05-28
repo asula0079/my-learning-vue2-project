@@ -34,11 +34,17 @@ export default Vue.extend({
   },
   created () {
     this.loadUserInfo()
+    this.loadUserInfo()
+    this.loadUserInfo()
   },
   methods: {
     async loadUserInfo () {
-      const { data } = await getUserInfo()
-      this.userinfo = data.content
+      try {
+        const { data } = await getUserInfo()
+        this.userinfo = data.content
+      } catch (e) {
+        console.log(e)
+      }
     },
     handleLogout () {
       this.$confirm('退出系统, 是否继续?', '提示', {

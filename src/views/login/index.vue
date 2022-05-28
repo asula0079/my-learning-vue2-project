@@ -84,7 +84,7 @@ export default Vue.extend({
         this.$message.success('登录成功')
         this.loading = false
       } catch (err) {
-        this.$message.info('输入信息不正确')
+        this.$message.info(`请求失败：${err}`)
         this.loading = false
       }
     }
